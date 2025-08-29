@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para o Amor da Minha Vida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>ANTHONY ❤️ MANOELA</h1>
+  <div class="container">
+    <h2 class="titulo-brilhante">Oi, Meu amor ❤️ </h2>
+    <p>Só pra te lembrar o quanto você é especial pra mim, nunca se esqueça disso!</p>
+
+    <button onclick="mostrarDeclaracao()">Clique aqui</button>
+
+    <div id="mensagem" class="mensagem">
+      <p>Você é Incrivel, Eu te amo!❤️ </p>
+    </div>
+
+    <div class="pergunta">
+      <p>Você me ama?</p>
+      <button id="btn-sim">Sim</button>
+      <button id="btn-nao">Não</button>
+      <p id="resposta-sim" style="display: none;">Claro que me ama, eu também te amo</p>
+    </div>
+
+  <div class="section">
+  <h2>📸 Nossa Galeria</h2>
+ <label for="photoUpload" class="btnupload">Selecionar Foto</label>
+<input type="file" id="photoUpload" multiple style="display: none;">
+<button id="clearPhotosBtn" class="button">Apagar Fotos</button>
+<div id="photos"></div>
+</div>
+
+<!-- Modal para imagem ampliada -->
+<div id="imgModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+  <img id="modalImg" src="" alt="Imagem ampliada" style="max-width:90vw; max-height:90vh; border-radius: 10px; box-shadow: 0 0 20px rgba(255,255,255,0.7); cursor: zoom-out;">
+</div>
+   
+
+  <audio id="audio-player" src="sua-musica.mp3" autoplay loop></audio>
+<button onclick="tocarMusica()">Tocar música</button>
+
+
+  <div class="chuva-de-coracoes"></div>
+
+  <div class="carta3d-container">
+    <div class="carta3d" id="carta3d" onclick="abrirCarta3D()">
+      <div class="frente">
+        <p>Clique para abrir 💌</p>
+      </div>
+      <div class="dentro">
+        <p>
+          Meu amor, Meu coração encontrou o lar quando conheceu o seu. ❤️
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <button id="modo-btn">🌙</button>
+
+  <div id="Counter" class="contador">
+
+    <h3>NOSSO TEMPO:</h3>
+    <p id="tempo-juntos"></p>
+  </div>
+  
+  <script src="script.js"></script>
+  <audio id="audio-player" src="sua-musica.mp3" autoplay loop></audio>
+
+  <p id="digitar"></p>
+
+<div class="section">
+    <h2>🌸 Dias Especiais</h2>
+    <ul id="specialDays"></ul>
+    <div class="add-day">
+      <input type="date" id="dayDate">
+      <input type="text" id="dayDesc" placeholder="Descrição do dia especial">
+      <button id="addDayBtn">Adicionar</button>
+    </div>
+  </div>
+
+
+</body>
+</html>
